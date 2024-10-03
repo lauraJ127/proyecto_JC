@@ -1,0 +1,13 @@
+.container .banner {
+    display: flex;
+    justify-content: flex-start
+}
+
+.container.banner material-symbols-outlined {
+    justify-content: right;
+}
+
+.container .banner img {
+    width: 4rem;
+    height: auto;
+}
