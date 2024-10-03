@@ -1,13 +1,58 @@
-.container .banner {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial' sans-serif;
+    height: 150vh;
+}
+
+.container {
     display: flex;
-    justify-content: flex-start
+    justify-content: space-between;
 }
-
-.container.banner material-symbols-outlined {
-    justify-content: right;
+.banner {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 3em;
+    padding-left: 2.5em;
 }
-
-.container .banner img {
+h1{
+    color: #ffffff;
+    text-shadow:
+            -1px -1px 0 #333,
+            1px -1px 0 #333,
+            -1px 1px 0 #333,
+            1px 1px 0 #333;
+    padding-top: 0.5em;
+    margin-left: 0.2em;
+}
+.banner img {
     width: 4rem;
     height: auto;
+}
+.material-symbols-outlined {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 3em;
+    margin-right: 2.5em;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: linear-gradient(to top, hsla(240, 91%, 47%, 0.6), hsla(301, 100%, 59%, 0.651)), url(../img/fondo_header.jpg);
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
 }
