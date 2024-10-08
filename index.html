@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/portafolio.css">
 		<style>
-		@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,100..900&display=swap');
+			@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,100..900&display=swap");
 		</style>
 		<title>Salvavidas Académico</title>
 	</head>
@@ -15,10 +16,10 @@
 	<body>
 		<!-- ----------------------INICIO HEADER---------------------- -->
 		<header>
-			<div class="container">
+			<div>
 				<div class="banner">
 					<img src="img/logo.png" alt="logo" />
-					<h1 class="text">Salvavidas acádemico</h1>
+					<h1>Salvavidas acádemico</h1>
 				</div>
 			</div>
 			<div class="header-column">
@@ -26,11 +27,11 @@
 				<nav class="menu-vertical">
 					<div class="nav__menu" id="nav-menu">
 						<ul class="nav__list">
-							<li><a href="#" class="nav__link">Conocenos</a></li>
-							<li><a href="#" class="nav__link">Portafolio</a></li>
-							<li><a href="#" class="nav__link">Registrate</a></li>
+							<li><a href="#" class="nav__link">Quiénes Somos</a></li>
+							<li><a href="#Portafolio" class="nav__link">Portafolio</a></li>
 							<li><a href="#" class="nav__link">Testimonios</a></li>
-							<li><a href="#" class="nav__link">Contactanos</a></li>
+							<li><a href="./pages/service.html" class="nav__link">Cotiza con nosotros</a></li>
+							<li><a href="https://wa.me/573024547947" target="_blank" class="nav__link">Contáctanos</a></li>
 						</ul>
 						<div class="nav__close" id="nav-close">
 							<i class="ri-close-large-line"></i>
@@ -52,7 +53,48 @@
 
 		<!-- ----------------------INICIO MAIN---------------------- -->
 		<main>
-			<section></section>
+			<section id="Portafolio">
+				<div class="section-header">
+				  <h3 class="title">Servicios</h3>
+				  <p class="text">Líderes en el mercado de servicios digitales.</p>
+				</div>
+				<div class="cards">
+						<div class="container">
+
+          <div class="cards">
+            <div class="card">
+              <div class="card-content z-index">
+				<img src="./img/icon-card1.png" class="icon" alt="" />
+                <h3 class="title-sm">Asesoría Académica Personalizada</h3>
+                <p class="text">
+                  Reseñas, resúmenes y ensayos a medida, corrección y edición de trabajos bajo normas APA y otros estilos académicos.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-content z-index">
+				<img src="./img/icon-card2.png" class="icon" alt="" />
+                <h3 class="title-sm">Evaluación y Preparación Académica</h3>
+                <p class="text">
+                  Simulacros de exámenes virtuales y de ingreso, preparación para exámenes mediante ejercicios personalizados.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-content z-index">
+				<img src="./img/icon-card3.png" class="icon" alt="" />
+                <h3 class="title-sm">Desarrollo de Proyectos Investigativos</h3>
+                <p class="text">
+                  Asesoría en la formulación y ejecución de proyectos de investigación, ayuda con la estructuración, desarrollo y análisis de datos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+				</div>
+			</section>
 		</main>
 		<!-- ----------------------FIN MAIN---------------------- -->
 

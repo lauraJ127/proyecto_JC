@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Arial' sans-serif;
     height: 150vh;
@@ -33,6 +38,7 @@ h1{
             1px 1px 0 #333;
     padding-top: 0.5em;
     margin-left: 0.2em;
+    font-style: italic;
 }
 
 header {
@@ -72,7 +78,8 @@ header {
 .menu-vertical {
     display: flex;
     justify-content: flex-end;
-    margin-right: 3.5em;
+    margin-right: 2.5em;
+    
     
 }
 
@@ -88,7 +95,7 @@ header {
 .nav__toggle {
     display: inline-flex;
     font-size: 2.1rem;
-    color: hsl(0, 0%, 100%);
+    color: hsl(238, 100%, 70%);
     cursor: pointer;
 }
 
