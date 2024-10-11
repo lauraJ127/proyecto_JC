@@ -1,0 +1,37 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+/* hr{
+    margin-left: 30%;
+    margin-right: 30%;
+} */
+.about h2{
+    font-family: 'Arial' sans-serif;
+    font-style: italic;
+    color: #000;
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+.about p{
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    color: #7a7a7a;
+    font-style: italic;
+}
+.about .about-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial' sans-serif;
+    color: #7a7a7a;
+    font-size: 1.15em;
+    line-height: 1.6;
+}

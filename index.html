@@ -4,9 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/portafolio.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"/>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/carousel.css" />
+		<link rel="stylesheet" href="./css/about.css" />
+		<link rel="stylesheet" href="./css/portafolio-servicios.css" />
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,100..900&display=swap");
 		</style>
@@ -17,7 +19,7 @@
 		<!-- ----------------------INICIO HEADER---------------------- -->
 		<header>
 			<div>
-				<div class="banner">
+				<div class="banner" id="banner">
 					<img src="img/logo.png" alt="logo" />
 					<h1>Salvavidas acádemico</h1>
 				</div>
@@ -27,8 +29,9 @@
 				<nav class="menu-vertical">
 					<div class="nav__menu" id="nav-menu">
 						<ul class="nav__list">
-							<li><a href="#" class="nav__link">Quiénes Somos</a></li>
+							<li><a href="#quienesSomos" class="nav__link">Quiénes Somos</a></li>
 							<li><a href="#Portafolio" class="nav__link">Portafolio</a></li>
+							<li><a href="#Services" class="nav__link">Nuestros Servicios</a></li>
 							<li><a href="#" class="nav__link">Testimonios</a></li>
 							<li><a href="./pages/service.html" class="nav__link">Cotiza con nosotros</a></li>
 							<li><a href="https://wa.me/573024547947" target="_blank" class="nav__link">Contáctanos</a></li>
@@ -53,53 +56,138 @@
 
 		<!-- ----------------------INICIO MAIN---------------------- -->
 		<main>
+
+			<!-- -----------SECCION QUIENES SOMOS-------------- -->
+			<section class="about" id="quienesSomos">
+				<article class="about-article">
+					<h2>Quiénes Somos</h2>
+					<p>
+						Este emprendimiento surge de la experiencia personal de enfrentar un mercado laboral exigente y poco receptivo,
+						especialmente para jóvenes recién graduados. Ante la falta de oportunidades y las altas exigencias de las
+						empresas, se identificó la necesidad de ofrecer un apoyo especializado a estudiantes y profesionales en
+						formación. Inicialmente, el proyecto comenzó ofreciendo publicidad en páginas universitarias y ha crecido hasta
+						convertirse en un servicio integral que incluye la elaboración de ensayos, trabajos, exámenes en línea, y más.
+						Nuestro propósito es facilitar el camino académico y profesional de nuestros clientes, brindando soluciones
+						confiables y adaptadas a sus necesidades.
+					</p>
+				</article>
+				<hr />
+				<br />
+				<article class="about-article">
+					<h2>Misión</h2>
+					<p>
+						Nuestra misión es ofrecer soluciones digitales especializadas para universitarios, apoyándolos en su proceso
+						académico y profesional a través de servicios personalizados, de alta calidad y con enfoque en resultados.
+						Buscamos ser el aliado clave de los estudiantes, ayudándoles a superar los desafíos académicos con confianza y
+						efectividad.
+					</p>
+				</article>
+				<hr />
+				<br />
+				<article class="about-article">
+					<h2>Visión</h2>
+					<p>
+						Ser el referente líder en servicios digitales para universitarios, contribuyendo al desarrollo académico y
+						profesional de nuestros clientes. Aspiramos a expandir nuestra oferta y presencia, ofreciendo soluciones
+						innovadoras que faciliten la inserción al mercado laboral y potencien el éxito de jóvenes profesionales
+					</p>
+				</article>
+				<hr />
+				<br />
+			</section>
+
+			<!-- -----------SECCION PORTAFOLIO-------------- -->
 			<section id="Portafolio">
 				<div class="section-header">
-				  <h3 class="title">Servicios</h3>
-				  <p class="text">Líderes en el mercado de servicios digitales.</p>
+					<h3 class="title">Nuestro Portafolio</h3>
+					<p class="text">
+						Descubre cómo nuestra experiencia y habilidades han transformado desafíos en aciertos a lo largo de una sólida
+						trayectoria.
+					</p>
+					<p class="text-min">Haz click en las imágenes para ver más . . .</p>
 				</div>
-				<div class="cards">
-						<div class="container">
-
-          <div class="cards">
-            <div class="card">
-              <div class="card-content z-index">
-				<img src="./img/icon-card1.png" class="icon" alt="" />
-                <h3 class="title-sm">Asesoría Académica Personalizada</h3>
-                <p class="text">
-                  Reseñas, resúmenes y ensayos a medida, corrección y edición de trabajos bajo normas APA y otros estilos académicos.
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-content z-index">
-				<img src="./img/icon-card2.png" class="icon" alt="" />
-                <h3 class="title-sm">Evaluación y Preparación Académica</h3>
-                <p class="text">
-                  Simulacros de exámenes virtuales y de ingreso, preparación para exámenes mediante ejercicios personalizados.
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-content z-index">
-				<img src="./img/icon-card3.png" class="icon" alt="" />
-                <h3 class="title-sm">Desarrollo de Proyectos Investigativos</h3>
-                <p class="text">
-                  Asesoría en la formulación y ejecución de proyectos de investigación, ayuda con la estructuración, desarrollo y análisis de datos.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+				<div class="carousel-container">
+					<div class="carousel-slide">
+						<a href=""><img src="img/Muestra1.png" alt="" /></a>
+						<a href=""><img src="/img/muestra2.jpg" alt="" /></a>
+						<a href=""><img src="/img/muestra4.jpg" alt="" /></a>
+						<a href=""><img src="/img/muestra5.jpg" alt="" /></a>
+						<a href=""><img src="/img/unseen-studio-s9CC2SKySJM-unsplash.jpg" alt="" /></a>
+						<a href=""><img src="/img/muestra3.jpg" alt="" /></a>
+						<a href=""><img src="/img/muestra7.png" alt="" /></a>
+						<a href=""><img src="/img/idiomasuniversitario.png" alt="" /></a>
+						<a href=""><img src="/img/cursos-del-centro-de-idiomas.jpg" alt="" /></a>
+					</div>
+					<!-- Botones para navegar -->
+					<button id="prevBtn" class="carousel-btn">❮</button>
+					<button id="nextBtn" class="carousel-btn">❯</button>
 				</div>
 			</section>
+
+
+			<!-- -----------SECCION SERVICIOS------------ -->
+			<section id="Services">
+				<div class="section-header">
+					<h3 class="title">Nuestros Servicios</h3>
+					<p class="text">Somos líderes en el mercado de servicios digitales.</p>
+				</div>
+						<div class="cards">
+							<div class="card">
+								<div class="card-content z-index">
+									<img src="./img/icon-card1.png" class="icon" alt="" />
+									<h3 class="title-sm">Asesoría Académica Personalizada</h3>
+									<p class="text">
+										Reseñas, resúmenes y ensayos a medida, corrección y edición de trabajos bajo normas APA y otros estilos
+										académicos.
+									</p>
+									<footer>
+										<a href="./pages/service.html" target="_blank" class="btn-small">Cotiza ahora</a>
+									</footer>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-content z-index">
+									<img src="./img/icon-card2.png" class="icon" alt="" />
+									<h3 class="title-sm">Evaluación y Preparación Académica</h3>
+									<p class="text">
+										Simulacros de exámenes virtuales y de ingreso, preparación para exámenes mediante ejercicios
+										personalizados.
+									</p>
+									<footer>
+										<a href="./pages/service.html" target="_blank" class="btn-small">Cotiza ahora</a>
+									</footer>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-content z-index">
+									<img src="./img/icon-card3.png" class="icon" alt="" />
+									<h3 class="title-sm">Desarrollo de Proyectos Investigativos</h3>
+									<p class="text">
+										Asesoría en la formulación y ejecución de proyectos de investigación, ayuda con la estructuración,
+										desarrollo y análisis de datos.
+									</p>
+									<footer>
+										<a href="./pages/service.html" target="_blank" class="btn-small">Cotiza ahora</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+			</section>
+			<div class="btn-back">
+				<a href="#banner" class="back-btn">
+					<i class="ri-arrow-up-wide-line"></i>
+				</a>
+			</div>
 		</main>
 		<!-- ----------------------FIN MAIN---------------------- -->
 
 		<!-- -----------INICIO FOOTER----------- -->
-		<footer></footer>
+		<footer>
+			
+		</footer>
+		<script src="./js/carousel.js"></script>
 		<script src="./js/menu.js"></script>
 	</body>
 </html>
