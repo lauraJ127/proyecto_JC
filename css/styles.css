@@ -60,7 +60,7 @@ header {
     padding: 1rem;
 }
 
-#title{
+.main-title{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +104,7 @@ header {
 .nav__toggle:hover{
     color:  rgb(60, 67, 255);
     transform: scaleY(0.95);
-    transition: 0.4 ease;
+    transition: 0.4 ease-in-out;
 }
 
 .nav__menu {

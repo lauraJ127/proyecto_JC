@@ -4,10 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
 		<link rel="stylesheet" href="./css/styles.css" />
 		<link rel="stylesheet" href="./css/carousel.css" />
 		<link rel="stylesheet" href="./css/about.css" />
+		<link rel="stylesheet" href="./css/testimonio.css" />
 		<link rel="stylesheet" href="./css/portafolio-servicios.css" />
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,100..900&display=swap");
@@ -18,21 +19,23 @@
 	<body>
 		<!-- ----------------------INICIO HEADER---------------------- -->
 		<header>
+
 			<div>
 				<div class="banner" id="banner">
 					<img src="img/logo.png" alt="logo" />
 					<h1>Salvavidas acádemico</h1>
 				</div>
 			</div>
+
 			<div class="header-column">
-				<h2 id="title">Proyectate hacia el futuro... somos tu mejor opción.</h2>
+				<h2 class="main-title">Proyectate hacia el futuro... somos tu mejor opción.</h2>
 				<nav class="menu-vertical">
 					<div class="nav__menu" id="nav-menu">
 						<ul class="nav__list">
 							<li><a href="#quienesSomos" class="nav__link">Quiénes Somos</a></li>
 							<li><a href="#Portafolio" class="nav__link">Portafolio</a></li>
 							<li><a href="#Services" class="nav__link">Nuestros Servicios</a></li>
-							<li><a href="#" class="nav__link">Testimonios</a></li>
+							<li><a href="#Testimonios" class="nav__link">Testimonios</a></li>
 							<li><a href="./pages/service.html" class="nav__link">Cotiza con nosotros</a></li>
 							<li><a href="https://wa.me/573024547947" target="_blank" class="nav__link">Contáctanos</a></li>
 						</ul>
@@ -56,8 +59,7 @@
 
 		<!-- ----------------------INICIO MAIN---------------------- -->
 		<main>
-
-			<!-- -----------SECCION QUIENES SOMOS-------------- -->
+			<!-- -----------SECCION QUIENES SOMOS-------------- --> 
 			<section class="about" id="quienesSomos">
 				<article class="about-article">
 					<h2>Quiénes Somos</h2>
@@ -124,70 +126,96 @@
 				</div>
 			</section>
 
-
 			<!-- -----------SECCION SERVICIOS------------ -->
 			<section id="Services">
 				<div class="section-header">
 					<h3 class="title">Nuestros Servicios</h3>
 					<p class="text">Somos líderes en el mercado de servicios digitales.</p>
 				</div>
-						<div class="cards">
-							<div class="card">
-								<div class="card-content z-index">
-									<img src="./img/icon-card1.png" class="icon" alt="" />
-									<h3 class="title-sm">Asesoría Académica Personalizada</h3>
-									<p class="text">
-										Reseñas, resúmenes y ensayos a medida, corrección y edición de trabajos bajo normas APA y otros estilos
-										académicos.
-									</p>
-									<footer>
-										<a href="./pages/service.html" target="_blank" class="btn-small">Cotiza ahora</a>
-									</footer>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-content z-index">
-									<img src="./img/icon-card2.png" class="icon" alt="" />
-									<h3 class="title-sm">Evaluación y Preparación Académica</h3>
-									<p class="text">
-										Simulacros de exámenes virtuales y de ingreso, preparación para exámenes mediante ejercicios
-										personalizados.
-									</p>
-									<footer>
-										<a href="./pages/service.html" target="_blank" class="btn-small">Cotiza ahora</a>
-									</footer>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-content z-index">
-									<img src="./img/icon-card3.png" class="icon" alt="" />
-									<h3 class="title-sm">Desarrollo de Proyectos Investigativos</h3>
-									<p class="text">
-										Asesoría en la formulación y ejecución de proyectos de investigación, ayuda con la estructuración,
-										desarrollo y análisis de datos.
-									</p>
-									<footer>
-										<a href="./pages/service.html" target="_blank" class="btn-small">Cotiza ahora</a>
-									</footer>
-								</div>
-							</div>
+				<div class="cards">
+					<div class="card">
+						<div class="card-content z-index">
+							<img src="./img/icon-card1.png" class="icon" alt="" />
+							<h3 class="title-sm">Asesoría Académica Personalizada</h3>
+							<p class="text">
+								Reseñas, resúmenes y ensayos a medida, corrección y edición de trabajos bajo normas APA y otros estilos
+								académicos.
+							</p>
+							<footer>
+								<a href="./pages/service.html" target="_blank" class="btn-small">Cotiza ahora</a>
+							</footer>
 						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-content z-index">
+							<img src="./img/icon-card2.png" class="icon" alt="" />
+							<h3 class="title-sm">Evaluación y Preparación Académica</h3>
+							<p class="text">
+								Simulacros de exámenes virtuales y de ingreso, preparación para exámenes mediante ejercicios personalizados.
+							</p>
+							<footer>
+								<a href="./pages/service.html" target="_blank" class="btn-small">Cotiza ahora</a>
+							</footer>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-content z-index">
+							<img src="./img/icon-card3.png" class="icon" alt="" />
+							<h3 class="title-sm">Desarrollo de Proyectos Investigativos</h3>
+							<p class="text">
+								Asesoría en la formulación y ejecución de proyectos de investigación, ayuda con la estructuración, desarrollo
+								y análisis de datos.
+							</p>
+							<footer>
+								<a href="./pages/service.html" target="_blank" class="btn-small">Cotiza ahora</a>
+							</footer>
+						</div>
+					</div>
+				</div>
 			</section>
-			<div class="btn-back">
-				<a href="#banner" class="back-btn">
-					<i class="ri-arrow-up-wide-line"></i>
-				</a>
-			</div>
+			
+
+			<!-- -----------SECCION TESTIMONIOS--------------- -->
+			<section id="Testimonios">
+				<div class="section-header">
+					<h2 class="title" data-title="Qué dicen de nosotros">Testimonios</h2>
+					<p class="text">Deja una opinión en nuestra caja de comentarios.</p>
+				</div>
+				<div class="testi-content grid-2">
+					<div class="coment">
+						<h2 class="title">Déjanos saber tu opinión.</h2>
+						<form class="form-coment" id="form">
+							<textarea name="Comentario" class="coment-input textarea" id="nuevoComentario" placeholder="Agrega un comentario"></textarea>
+							 <div class="rating">
+        					  	<span data-value="5">★</span>
+								<span data-value="4">★</span>
+								<span data-value="3">★</span>
+								<span data-value="2">★</span>
+								<span data-value="1">★</span>
+    						</div>
+							<button type="submit" class="btn-small">Añadir</button>
+						</form>
+					</div>
+					<img src="./img/testi.svg" alt="" />
+					
+				</div>
+				<ul class="opiniones" id="listaDeComentarios"></ul>
+			</section>
 		</main>
 		<!-- ----------------------FIN MAIN---------------------- -->
 
 		<!-- -----------INICIO FOOTER----------- -->
 		<footer>
-			
+			<div class="btn-back">
+				<a href="#banner" class="back-btn">
+					<i class="ri-arrow-up-wide-line"></i>
+				</a>
+			</div>
 		</footer>
 		<script src="./js/carousel.js"></script>
 		<script src="./js/menu.js"></script>
+		<script src="./js/comentarios.js"></script>
 	</body>
 </html>

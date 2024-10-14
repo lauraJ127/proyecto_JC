@@ -1,0 +1,125 @@
+.title:before {
+    content: attr(data-title);
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #7a7a7a;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: underline;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.testi-content {
+    margin-top: 6rem;
+}
+
+.coment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coment-input.textarea {
+    resize: none;
+    min-height: 12rem;
+    min-width: 25rem;
+    border-radius: 2rem;
+}
+
+
+.coment-input {
+    padding: 1.2rem 2.1rem;
+    margin: 0.6rem 0;
+    border: none;
+    outline: none;
+    background: #f3f3f3;
+    border-radius: 4rem;
+    font-weight: 200;
+    font-size: 1rem;
+    transition: 0.4s ease-in-out;
+}
+
+.coment-input::placeholder {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.form-coment{
+    display: flex;
+    flex-direction: column;
+}
+
+.opiniones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3rem;
+    grid-gap: 3rem;
+    margin: 3rem 6rem 6rem 6rem;
+    padding: 0;
+    list-style: none;
+}
+
+.opiniones li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-height: 10rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #7a7a7a;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+
+.btn-delete{
+    font-family: 'Roboto' sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem 0.5rem;
+    max-width: 5rem;
+    font-size: 1rem;
+    background-color: rgb(255, 102, 107);
+     border-radius: 0.8rem;
+     border: none;
+     font-weight: 400;
+    align-self: flex-end;
+}
+
+.btn-delete:hover {
+    background-color: rgb(255, 4, 4);
+    font-weight: 500;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.rating span {
+    font-size: 30px;
+    color: #ddd;
+    margin: 5px;
+}
+
+.rating span:hover,
+.rating span:hover~span {
+    color: #ffca08;
+}
+
+.rating .selected {
+    color: #ffca08;
+
+}
