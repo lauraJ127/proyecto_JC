@@ -1,0 +1,75 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background-color: #57575793;
+    height: 3.2rem;
+    width: 100%;
+    margin-top: 2rem;
+    
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-left: 2.3rem;
+}
+
+.footer-left-content{
+    display: flex;
+    align-items: center;
+}
+
+.footer span{
+    color: #333;
+}
+
+.footer .nombre{
+    color: rgb(0, 0, 0);
+    text-shadow:
+            -1px -1px 0 #333,
+            1px -1px 0 #fff,
+            -1px 1px 0 #fff,
+            1px 1px 0 #fff;
+    font-size: 1.1rem;
+}
+
+.footer .apellido{
+    color: red;
+    font-size: 1.1rem;
+    text-shadow:
+            -1px -1px 0 #333,
+            1px -1px 0 #fff,
+            -1px 1px 0 #fff,
+            1px 1px 0 #fff;
+}
+
+.footer-right{
+    display: flex;
+    align-items: center;
+    margin-right: 7rem;
+}
+
+.footer-right span{
+    color: #2c2c2c;
+}
+
+.footer-line {
+    width: 20px;
+    height: 2px;
+    background-color: #7b7b7b;
+    margin: 0 1.2rem;
+    display: inline-block;
+}
+
+.redes-sociales{
+    font-size: 1.2rem;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+    color: white;
+    padding-right: 1rem;
+}
