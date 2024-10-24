@@ -63,7 +63,7 @@
     width: 100%;
     max-width: 20rem;
     min-height: 25rem;
-    background-color: hsla(39, 77%, 83%, 0.5);
+    background-color: hsla(39, 77%, 83%, 0.35);
     display: flex;
     align-items: center;
     justify-content: center;

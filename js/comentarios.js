@@ -1,3 +1,5 @@
+import { initStars } from './stars.js';
+
 document.addEventListener('DOMContentLoaded', function () {
     let comentarios = JSON.parse(localStorage.getItem('comentarios')) || [];  // Cargar comentarios del localStorage o inicializar vacío
 
@@ -5,13 +7,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form');
     const nuevoComentarioInput = document.getElementById('nuevoComentario');
 
-    
+    // Aquí llamamos al sistema de estrellas
+    const starsInstance = initStars('.estrella', function (rating) {
+        console.log('Calificación seleccionada: ' + rating);
+    });
 
     function renderizarComentarios() {
         listaDeComentarios.innerHTML = '';
-        comentarios.forEach((comentario, index) => {
+        comentarios.forEach((comentarioObj, index) => {
             const li = document.createElement('li');
-            li.textContent = comentario;
+            li.textContent = `${comentarioObj.texto} - Calificación: ${comentarioObj.calificacion} estrellas`;
 
             const botonEliminar = document.createElement('button');
             botonEliminar.textContent = 'Eliminar';
@@ -28,11 +33,15 @@ document.addEventListener('DOMContentLoaded', function () {
     function agregarComentario(e) {
         e.preventDefault();  // Evitar que el formulario se envíe
         const nuevoComentario = nuevoComentarioInput.value.trim();
-        if (nuevoComentario !== "") {
-            comentarios.push(nuevoComentario); // Agrega el nuevo comentario
-            comentarios.sort();  // Ordenar los comentarios
+        const calificacion = starsInstance.getRating();  // Obtener la calificación seleccionada
+
+        if (nuevoComentario !== "" && calificacion > 0) {
+            const comentarioObj = { texto: nuevoComentario, calificacion: calificacion };
+            comentarios.push(comentarioObj);  // Agregar el nuevo comentario con la calificación
+            comentarios.sort((a, b) => a.texto.localeCompare(b.texto));  // Ordenar los comentarios
             localStorage.setItem('comentarios', JSON.stringify(comentarios)); // Guardar en localStorage
             nuevoComentarioInput.value = '';  // Limpiar el campo de entrada
+            starsInstance.resetStars();  // Reiniciar las estrellas
             renderizarComentarios();  // Renderizar la lista actualizada
         }
     }
