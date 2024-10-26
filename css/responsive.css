@@ -1,0 +1,52 @@
+@media (max-width: 480px) {
+    /* Estilos específicos para pantallas de 480px o menos */
+
+    body {
+        font-size: 14px;
+        /* Tamaño de fuente más pequeño */
+    }
+
+    header {
+        height: 100vh;
+        padding: 10px;
+        /* Ajustar los márgenes o el padding */
+        text-align: center;
+        /* Alinear contenido centrado */
+    }
+
+    nav {
+        display: none;
+        /* Ocultar el menú de navegación, si es necesario */
+    }
+
+    .container {
+        width: 100%;
+        /* Asegurar que los contenedores ocupen todo el ancho */
+        padding: 0 10px;
+        /* Añadir algo de padding para que el contenido no toque los bordes */
+    }
+
+    .img-responsive {
+        max-width: 100%;
+        /* Las imágenes no deben exceder el ancho del contenedor */
+        height: auto;
+        /* Mantener la proporción de la imagen */
+    }
+
+    .sidebar {
+        display: none;
+        /* Ocultar o adaptar elementos secundarios como la barra lateral */
+    }
+
+    footer {
+        font-size: 12px;
+        /* Reducir el tamaño del texto en el pie de página */
+        padding: 10px;
+    }
+
+.back-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: auto;
+}
+}

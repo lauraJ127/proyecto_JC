@@ -5,24 +5,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
-		<link rel="stylesheet" href="../css/styles.css"/>
+		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/service.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
 		<style>
-		@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,100..900&display=swap');
+			@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,100..900&display=swap");
 		</style>
 		<title>Salvavidas Académico</title>
 	</head>
 
 	<body>
-			<!-- ----------------------INICIO HEADER---------------------- -->
+		<!-- ----------------------INICIO HEADER---------------------- -->
 		<header>
 			<div class="container">
 				<div class="banner">
 					<img src="../img/logo.png" alt="logo" />
-					<h1>Salvavidas acádemico</h1>
+					<h1>Salvavidas Acádemico</h1>
+				</div>
+				<div class="account">
+					<p class="greeting" id="greeting"></p>
+					<a href="" title="Cerrar Sesión"><i class="logout-icon ri-logout-box-r-line" data-title="LogOut"></i></a>
 				</div>
 			</div>
 			<div class="header-column">
-				<h2 class="main-title">Proyectate hacia el futuro... somos tu mejor opción.</h2>
+				<h2 class="main-title">¡Permítenos ser la clave para que tu visión de éxito se haga realidad!</h2>
 				<nav class="menu-vertical">
 					<div class="nav__menu" id="nav-menu">
 						<ul class="nav__list">
@@ -52,12 +58,83 @@
 
 		<!-- ----------------------INICIO MAIN---------------------- -->
 		<main>
-			<section>
+			<section class="contact" id="contact">
+				<div class="container">
+					<div class="contact-box">
+						<div class="contact-info">
+							<h3 class="title">Selecciona tu servicio</h3>
+							<p class="text">
+								Elige el servicio que más se adecúe a tus necesidades.
+							</p>
+							<div class="information-wrap">
+								<div class="information">
+									<select name="Services" id="service" required>
+                                        <option value="" disabled selected>Selecciona la rama que necesitas</option>
+                                        <option value="AAP">Asesoría Académica Personalizada</option>
+                                        <option value="EPA">Evaluación y Preparación Académica</option>
+                                        <option value="DPI">Desarrollo de Proyectos Investigativos</option>
+                                    </select>
+									<select id="subService" disabled>
+    									<option value="">Selecciona el tipo de servicio que requieres</option>
+									</select>
+								</div>
 
+								<div class="information">
+								
+								</div>
+
+								<div class="information">
+									
+								</div>
+							</div>
+						</div>
+
+						<form class="contact-form">
+							<h3 class="title">Contáctame</h3>
+							<div class="row">
+								<input type="text" class="contact-input" placeholder="Nombre" />
+								<input type="text" class="contact-input" placeholder="Apellido" />
+							</div>
+
+							<div class="row">
+								<input type="tel" class="contact-input" placeholder="Celular" />
+								<input type="email" class="contact-input" placeholder="Email"/>
+							</div>
+
+							<div class="row">
+								<textarea name="message" class="contact-input textarea" placeholder="Descríbenos tu proyecto"></textarea>
+							</div>
+							<a href="" class="btn-small">Enviar</a>
+						</form>
+					</div>
+				</div>
 			</section>
 		</main>
 		<!-- ----------------------FIN MAIN---------------------- -->
-		<footer></footer>
+		<footer class="footer">
+			<div class="footer-left">
+				<div class="footer-left-content">
+					<span>Copyright&copy;2024 | Hecho por:&nbsp;</span>
+					<span class="nombre">Laura&nbsp;</span>
+					<span class="apellido">Jaramillo</span>
+				</div>
+			</div>
+
+			<div class="footer-right">
+				<span>Sígueme</span>
+				<span class="footer-line"></span>
+				<div class="redes-sociales">
+					<a href="#"><i class="ri-facebook-circle-fill"></i></a>
+					<a href="#"><i class="ri-instagram-line"></i></a>
+					<a href="#"><i class="ri-twitter-x-fill"></i></a>
+					<a href="#"><i class="ri-linkedin-box-fill"></i></a>
+				</div>
+			</div>
+		</footer>
 		<script src="../js/menu.js"></script>
+		<script src="../js/login.js"></script>
+		<script src="../js/logout.js"></script>
+		<script src="../js/checksession.js"></script>
+		<script src="../js/services.js"></script>
 	</body>
 </html>

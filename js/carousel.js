@@ -27,7 +27,6 @@ function moveCarousel() {
 }
 
 // // Configura el intervalo para mover el carrusel cada 3.5 segundos
-// let interval = setInterval(moveCarousel, 3500); // 3500 milisegundos = 3.5 segundos
 
 // Funciones para manejar la interacción de los botones
 function previousSlide() {
@@ -46,14 +45,8 @@ function previousSlide() {
 
 function nextSlide() {
     moveCarousel(); // Usa la función de movimiento existente
-    resetInterval(); // Reinicia el intervalo al cambiar manualmente
 }
 
-// Reinicia el intervalo
-function resetInterval() {
-    clearInterval(interval);
-    interval = setInterval(moveCarousel, 3500);
-}
 
 // Agrega eventos a los botones
 prevButton.addEventListener('click', previousSlide);

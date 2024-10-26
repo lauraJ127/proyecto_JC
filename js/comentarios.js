@@ -13,11 +13,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function renderizarComentarios() {
-        listaDeComentarios.innerHTML = '';
+        listaDeComentarios.innerHTML = '';  // Limpiar la lista
+
         comentarios.forEach((comentarioObj, index) => {
             const li = document.createElement('li');
-            li.textContent = `${comentarioObj.texto} - Calificación: ${comentarioObj.calificacion} estrellas`;
+            li.textContent = comentarioObj.texto;  // Solo el texto del comentario
 
+            // Crear un contenedor para las estrellas
+            const estrellasContainer = document.createElement('div');
+            estrellasContainer.classList.add('estrellas-calificacion');
+
+            // Añadir 5 estrellas al contenedor
+            for (let i = 1; i <= 5; i++) {
+                const estrella = document.createElement('span');
+                estrella.classList.add('estrella');
+                estrella.innerHTML = '&#9733;';  // Icono de estrella
+
+                // Pintar las estrellas dependiendo de la calificación
+                if (i <= comentarioObj.calificacion) {
+                    estrella.classList.add('selected');  // Clase para las estrellas seleccionadas
+                }
+
+                estrellasContainer.appendChild(estrella);
+            }
+
+            // Añadir las estrellas al elemento `li`
+            li.appendChild(estrellasContainer);
+
+            // Botón para eliminar comentario
             const botonEliminar = document.createElement('button');
             botonEliminar.textContent = 'Eliminar';
             botonEliminar.classList.add('btn-delete');
@@ -26,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             li.appendChild(botonEliminar);
-            listaDeComentarios.appendChild(li);
+            listaDeComentarios.appendChild(li);  // Añadir a la lista
         });
     }
 

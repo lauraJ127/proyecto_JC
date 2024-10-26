@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Puddles&display=swap');
+
+.greeting{
+    color: white;
+    font-size: 1.125rem;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    margin-right: 0.5rem;
+}
+
+.greeting span{
+    color: #ffeba7;
+    filter: drop-shadow(1px 2px 1px #a7ffbf);
+    font-size: 1.3rem;
+    font-family: "Rubik Puddles";
+    font-weight: 600;
+    text-shadow:
+            -1px -1px 0 #333,
+            1px -1px 0 #333,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+.logout-icon{
+    font-size: 1.8rem;
+    margin-right: 2.5rem;
+    color: pink;
+}
+.logout-icon::after{
+    content: attr(data-title);
+    position: absolute;
+    color: white;
+    top: 15%;
+    right: 2.85%;
+    margin-top: 10px;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+}
+
+.account a{
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+}
+
+
+.contact-box {
+    width: 100%;
+    background-color: #51c6e766;
+    width: 100%;
+    border-radius: 45px;
+    padding: 5.5rem 4.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-info {
+    padding-right: 2rem;
+}
+
+.contact-form {
+    padding-left: 2rem;
+}
+
+.contact-info .title:after {
+    left: 0;
+    transform: initial;
+}
+
+.information-wrap {
+    margin-top: 2rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+
+.contact-icon {
+    min-width: 67px;
+    height: 67px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+.contact-form .title:after {
+    display: none;
+}
+
+.contact-form .title {
+    margin: 0;
+}
+
+.contact-form .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-column-gap: 0.6rem;
+}
+
+.contact-input {
+    padding: 1.2rem 2.1rem;
+    margin: 0.6rem 0;
+    border: none;
+    outline: none;
+    background: #f3f3f3;
+    border-radius: 4rem;
+    font-weight: 100;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contact-input::placeholder {
+    font-weight: 300;
+}
+
+.contact-input.textarea {
+    resize: none;
+    min-height: 280px;
+    border-radius: 2rem;
+    font-style: italic;
+}
+
+.contact-input:hover {
+    background: #ececec;
+}
+
+.contact-input:focus {
+    background: #eaeaea;
+}
+
+
+.btn-small {
+    font-family: 'Roboto' sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem 1.2rem;
+    font-size: 1.1rem;
+    background-color: rgb(102, 107, 255);
+    border-radius: 1rem;
+    border: none;
+    font-weight: 400;
+}
+
+.btn-small:hover {
+    background-color: rgb(60, 67, 255);
+    font-weight: bold;
+}

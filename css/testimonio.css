@@ -123,3 +123,19 @@
     color: #ffca08;
 
 }
+
+
+
+.estrellas-calificacion .estrella {
+    font-size: 1.2rem;
+    color: lightgray;
+    margin-right: 0.1rem;
+}
+
+.estrellas-calificacion .estrella.selected {
+    color: gold;
+}
+
+.estrellas-calificacion{
+    margin-top: 2rem;
+}
