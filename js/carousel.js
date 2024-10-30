@@ -40,7 +40,6 @@ function previousSlide() {
 
     carouselSlide.style.transition = 'transform 0.5s ease-in-out';
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    resetInterval(); // Reinicia el intervalo al cambiar manualmente
 }
 
 function nextSlide() {

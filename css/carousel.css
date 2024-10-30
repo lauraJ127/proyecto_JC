@@ -5,43 +5,34 @@
     position: relative;
     width: 98%;
     height: 450px;
-    /* Fija la altura del carrusel */
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-    /* Centra el carrusel horizontalmente */
 }
 
 .carousel-slide {
     display: flex;
-    width: calc(100% * 3);
+    width: calc(99% * 2.3);
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: rgba(245, 222, 179, 0.498);
-    /* Ajusta el ancho del contenedor */
     height: 100%;
-    /* Asegura que los elementos dentro tengan la misma altura */
-    transition: transform 1s ease-in-out;
+    transition: transform .5s ease-in-out;
     gap: 2rem;
 }
 
 .carousel-slide a {
     display: inline-block;
     width: calc(100% / 3);
-    /* El enlace tendrá el mismo ancho que la imagen */
     height: 100%;
-    /* El enlace también ajustará su altura */
     overflow: hidden;
-    /* Asegura que los elementos dentro no desborden */
+   
 }
 
 .carousel-slide img {
-    width: 95%;
-    /* Ocupa todo el ancho del enlace */
+    width: 100%;
     height: 98%;
-    /* Ocupa toda la altura del enlace */
     object-fit: cover;
-    /* Escala las imágenes proporcionalmente y recorta si es necesario */
     border-radius: 3%;
 }
 

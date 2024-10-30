@@ -1,5 +1,4 @@
 @media (max-width: 480px) {
-    /* Estilos específicos para pantallas de 480px o menos */
 
     body {
         font-size: 14px;
@@ -12,6 +11,18 @@
         /* Ajustar los márgenes o el padding */
         text-align: center;
         /* Alinear contenido centrado */
+    }
+
+
+    .nav__menu {
+        width: 10rem;
+        height: 25rem;
+        padding-left: 2rem;
+        
+    }
+
+    .nav__list{
+        gap: 1rem;
     }
 
     nav {
@@ -33,20 +44,52 @@
         /* Mantener la proporción de la imagen */
     }
 
-    .sidebar {
-        display: none;
-        /* Ocultar o adaptar elementos secundarios como la barra lateral */
+    .grid-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coment{
+        flex-shrink: 1;
+    }
+
+    .title{
+        flex-shrink: 1;
+    }
+    .form-coment{
+        flex-shrink: 1;
+    }
+    .testi-content img{
+        flex-shrink: 1;
     }
 
     footer {
-        font-size: 12px;
-        /* Reducir el tamaño del texto en el pie de página */
-        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-.back-btn {
-    position: fixed;
-    bottom: 1rem;
-    right: auto;
-}
+    .footer-right{
+        padding-left: 3rem;
+    }
+
+
+    .back-btn {
+        position: fixed;
+        bottom: 1rem;
+        right: auto;
+    }
+
+    .opiniones{
+       margin: 3rem auto;
+        gap: 1rem;
+        flex-wrap: wrap;
+    
+    }
+
+    .opiniones li{
+        width: 8rem;
+        overflow: hidden;
+
+    }
 }

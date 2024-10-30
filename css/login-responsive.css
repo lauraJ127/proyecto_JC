@@ -1,0 +1,14 @@
+@media (max-width: 480px) {
+    .section{
+        margin-top: 5rem;
+    }
+
+    .center-wrap{
+        height: 28rem;
+    }
+    .card-3d-wrap {
+        height: 30rem;
+        }
+
+   
+}
