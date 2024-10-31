@@ -2,23 +2,35 @@
 
     body {
         font-size: 14px;
-        /* Tamaño de fuente más pequeño */
     }
 
     header {
-        height: 100vh;
+        height: 70vh;
         padding: 10px;
-        /* Ajustar los márgenes o el padding */
         text-align: center;
-        /* Alinear contenido centrado */
     }
 
+    .greeting{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .nav__menu {
         width: 10rem;
         height: 25rem;
-        padding-left: 2rem;
-        
+        padding-left: 2rem; 
+    }
+
+    .account{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logout-icon::after {
+        content: attr(data-title);
+        position: sticky;
+        transition: opacity 0.3s;
+         font-size: 12px;
     }
 
     .nav__list{
@@ -27,21 +39,16 @@
 
     nav {
         display: none;
-        /* Ocultar el menú de navegación, si es necesario */
     }
 
     .container {
         width: 100%;
-        /* Asegurar que los contenedores ocupen todo el ancho */
         padding: 0 10px;
-        /* Añadir algo de padding para que el contenido no toque los bordes */
     }
 
     .img-responsive {
         max-width: 100%;
-        /* Las imágenes no deben exceder el ancho del contenedor */
         height: auto;
-        /* Mantener la proporción de la imagen */
     }
 
     .grid-2{
@@ -73,7 +80,6 @@
         padding-left: 3rem;
     }
 
-
     .back-btn {
         position: fixed;
         bottom: 1rem;
@@ -90,6 +96,29 @@
     .opiniones li{
         width: 8rem;
         overflow: hidden;
+    }
 
+    /* Services */
+        .contact-box {
+            grid-template-columns: 1fr;
+            padding: 1rem 1rem;
+            overflow: hidden;
+        }
+    
+        .contact-info,
+        .contact-form {
+            flex-shrink: 1;
+            padding: 0;
+        }
+
+    .information{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .information select{
+        width: 25rem;
+        padding-left: auto;
     }
 }
