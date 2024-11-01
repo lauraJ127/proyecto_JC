@@ -5,7 +5,7 @@ function logout(event) {
     localStorage.removeItem('isLoggedIn');
 
     // Redirige al usuario a la página de inicio de sesión o a la página principal
-    window.location.href = '../index.html';
+    window.location.href = '../../index.html';
 }
 
 // Agrega el evento al elemento de cierre de sesión (puede ser un ícono <i> o un enlace <a>)
