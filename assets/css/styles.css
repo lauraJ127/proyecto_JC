@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Puddles&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -48,21 +50,60 @@ h1{
 .login-icon{
     display: flex;
     align-items: center;
-    padding: 0rem 4.1rem;
+    padding: 0rem 5.9rem;
 }
 .login-icon a{
     text-decoration: none;
 }
+
 .icon-login{
     font-size: 2.3rem;
     margin: auto;
-    color: #ffeba7;
-    
+    color: #ffeba7; 
 }
 
 .icon-login:hover{
     color: #a7bbff;
 }
+
+.greeting {
+    color: white;
+    font-size: 1.125rem;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    margin-right: -1.85rem;
+}
+
+.greeting span {
+    color: #ffeba7;
+    filter: drop-shadow(1px 2px 1px #a7ffbf);
+    font-size: 1.3rem;
+    font-family: "Rubik Puddles";
+    font-weight: 600;
+    text-shadow:
+        -1px -1px 0 #333,
+        1px -1px 0 #333,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.logout-icon {
+    font-size: 1.8rem;
+    margin-right: 0;
+    color: pink;
+}
+
+.logout-icon::after {
+    content: attr(data-title);
+    position: absolute;
+    color: white;
+    top: 15%;
+    right: 4.85%;
+    margin-top: 10px;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
 header {
     position: relative;
     height: 70vh;

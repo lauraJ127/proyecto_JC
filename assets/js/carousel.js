@@ -9,7 +9,7 @@ const totalImages = images.length;
 
 // Tamaño de las imágenes visibles
 function getImageSize() {
-    return images[0].clientWidth; // Ancho de una imagen
+    return images[0].clientWidth;
 }
 
 // Función para mover el carrusel automáticamente
@@ -26,7 +26,6 @@ function moveCarousel() {
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
 
-// // Configura el intervalo para mover el carrusel cada 3.5 segundos
 
 // Funciones para manejar la interacción de los botones
 function previousSlide() {

@@ -41,7 +41,7 @@
     position: absolute;
     color: white;
     top: 15%;
-    right: 2.85%;
+    right: 3.85%;
     margin-top: 10px;
     transition: opacity 0.3s;
     font-size: 12px;
@@ -50,10 +50,10 @@
 .account{
     display: flex;
     align-items: center;
+    margin-right: 1rem;
 }
 
 .account a{
-    margin-left: 0.5rem;
     text-decoration: none;
     color: #333;
 }

@@ -1,11 +1,8 @@
-
-// Función para registrar al usuario
 document.addEventListener('DOMContentLoaded', function () {
     // Función para registrar al usuario
-    document.querySelector('#registerForm .btn[type="submit"]').addEventListener('click', function (event) {
-        event.preventDefault();
+    document.querySelector('#registerForm').addEventListener('submit', function (event) {
 
-        const firstName = document.getElementById('firstName').value.trim(); // trim() para eliminar espacios
+        const firstName = document.getElementById('firstName').value.trim();
         const lastName = document.getElementById('lastName').value.trim();
         const registerEmail = document.getElementById('registerEmail').value.trim();
         const registerPassword = document.getElementById('registerPassword').value.trim();
@@ -20,8 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             setTimeout(() => {
                 document.getElementById('reg-log').checked = false;
-                document.getElementById('registerForm').style.display = 'none';
-                document.getElementById('loginForm').style.display = 'block';
             }, 2000);
         }
     });
