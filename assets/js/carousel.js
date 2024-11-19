@@ -3,38 +3,37 @@ const images = document.querySelectorAll('.carousel-slide img');
 const prevButton = document.getElementById('prevBtn');
 const nextButton = document.getElementById('nextBtn');
 
-// Contador
+
 let counter = 0;
 const totalImages = images.length;
 
-// Tamaño de las imágenes visibles
+// Tamaño de las imágenes
 function getImageSize() {
     return images[0].clientWidth;
 }
 
-// Función para mover el carrusel automáticamente
+// Función para mover el carrusel
 function moveCarousel() {
     const size = getImageSize();
     counter++;
 
-    // Si el contador supera el número de imágenes menos 3, reiniciamos al inicio
+    // Si el contador supera el número de imágenes menos 3, reinicia a 0
     if (counter > totalImages - 3) {
-        counter = 0; // Reinicia al inicio
+        counter = 0; 
     }
 
     carouselSlide.style.transition = 'transform 0.5s ease-in-out';
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
 
-
-// Funciones para manejar la interacción de los botones
+// Funciones para los botones
 function previousSlide() {
     const size = getImageSize();
     counter--;
 
-    // Si el contador es menor que 0, volvemos a la última imagen
+    // Si el contador es menor que 0, volvemos a la imagen inicial
     if (counter < 0) {
-        counter = totalImages - 3; // Ajusta para mostrar las 3 últimas imágenes
+        counter = totalImages - 3; 
     }
 
     carouselSlide.style.transition = 'transform 0.5s ease-in-out';
@@ -42,9 +41,8 @@ function previousSlide() {
 }
 
 function nextSlide() {
-    moveCarousel(); // Usa la función de movimiento existente
+    moveCarousel(); // Recicla función
 }
-
 
 // Agrega eventos a los botones
 prevButton.addEventListener('click', previousSlide);

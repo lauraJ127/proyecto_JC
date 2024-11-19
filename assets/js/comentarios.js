@@ -1,13 +1,13 @@
 import { initStars } from './stars.js';
 
 document.addEventListener('DOMContentLoaded', function () {
-    let comentarios = JSON.parse(localStorage.getItem('comentarios')) || [];  // Cargar comentarios del localStorage o inicializar vacío
+    let comentarios = JSON.parse(localStorage.getItem('comentarios')) || [];  // Cargar comentarios del localStorage o inicia un array vacio
 
     const listaDeComentarios = document.getElementById('listaDeComentarios');
     const form = document.getElementById('form');
     const nuevoComentarioInput = document.getElementById('nuevoComentario');
 
-    // Aquí llamamos al sistema de estrellas
+    // Aquí llama al sistema de estrellas
     const starsInstance = initStars('.estrella', function (rating) {
         console.log('Calificación seleccionada: ' + rating);
     });
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 estrellasContainer.appendChild(estrella);
             }
 
-            // Añadir las estrellas al elemento `li`
+            // Añadir las estrellas al 'li'
             li.appendChild(estrellasContainer);
 
             // Botón para eliminar comentario
@@ -76,5 +76,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     form.addEventListener('submit', agregarComentario);
-    renderizarComentarios();  // Inicializar la lista
+    renderizarComentarios();  // Iniciar la lista
 });

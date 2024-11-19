@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ]
     };
 
-    // Definición de precios para cada combinación de servicio y subservicio
+    // Definición de precios para cada subservicio
     const prices = {
         AAP: {
             "reseñas": "75.000 pesos colombianos",
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const subServiceSelect = document.getElementById('subService');
     const priceMessage = document.getElementById('priceMessage');
 
-    // Evento para actualizar subservicios cuando cambia el servicio
+    // actualizar subservicios cuando cambia el servicio
     serviceSelect.addEventListener('change', function () {
         const selectedService = serviceSelect.value;
 
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (selectedService) {
             subServiceSelect.disabled = false;
 
-            // Obtener los subservicios correspondientes al servicio seleccionado
+            // Obtener los subservicios correspondientes
             const subServicesOptions = subServices[selectedService];
 
             // Crear opciones para el selector de subservicios
@@ -70,12 +70,11 @@ document.addEventListener('DOMContentLoaded', function () {
         priceMessage.style.display = 'none';
     });
 
-    // Evento para mostrar mensaje de precio cuando se selecciona un subservicio
+    // mostrar mensaje de precio cuando se selecciona un subservicio
     subServiceSelect.addEventListener('change', function () {
         const selectedService = serviceSelect.value;
         const selectedSubService = subServiceSelect.value;
 
-        // Mostrar el precio específico o el mensaje predeterminado
         if (selectedService && selectedSubService) {
             const servicePrices = prices[selectedService];
             const price = servicePrices[selectedSubService];
@@ -84,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (price !== undefined) {
                 priceMessage.textContent = `Precio estimado a partir de: $${price}. Los valores pueden ajustarse según la extensión y complejidad del servicio solicitado.`;
             } else {
-                priceMessage.textContent = "Precio de referencia. Los valores indicados pueden variar de acuerdo a la longitud y complejidad del servicio.";
+                priceMessage.textContent = "Precio de referencia no encontrado. Los valores pueden cambiar de acuerdo a la longitud y complejidad del servicio.";
             }
             priceMessage.style.display = 'block';
         } else {

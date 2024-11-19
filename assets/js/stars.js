@@ -26,7 +26,7 @@ export function initStars(selector, callback) {
         });
     });
 
-    // Función para resetear las estrellas a un valor inicial (opcional)
+    // Función para resetear las estrellas a un valor inicial
     function resetStars() {
         calificacionSeleccionada = 0;
         pintarEstrellas(calificacionSeleccionada);

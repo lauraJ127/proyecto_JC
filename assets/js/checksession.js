@@ -1,4 +1,4 @@
-// Función para mostrar el saludo al cargar la página
+// mostrar saludo al cargar la página
 window.onload = function () {
     const firstName = localStorage.getItem('firstName');
     const lastName = localStorage.getItem('lastName');
@@ -10,7 +10,7 @@ window.onload = function () {
     }
 };
 
-
+// Verificación de autenticación de usuario
 document.addEventListener('DOMContentLoaded', function () {
     if (localStorage.getItem('isLoggedIn') !== 'true') {
         window.location.href = '../pages/login.html';

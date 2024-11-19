@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (loginEmail === storedEmail && loginPassword === storedPassword) {
             localStorage.setItem('isLoggedIn', 'true');
 
-            document.getElementById('loginMessage').innerHTML = 'Inicio de sesión exitoso.<br>Redirigiendo a la página de inicio...';
+            document.getElementById('loginMessage').innerHTML = 'Inicio de sesión exitoso.<br>Redirigiendo a la página de servicios...';
             document.getElementById('loginMessage').style.color = 'green';
 
             setTimeout(() => {

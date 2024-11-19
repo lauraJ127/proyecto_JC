@@ -7,20 +7,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mostrar el menú al hacer clic en el ícono hamburguesa
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu');
-        navToggle.style.display = 'none'; // Oculta el botón hamburguesa
+        navToggle.style.display = 'none'; 
     });
 
-    // Cerrar el menú al hacer clic en el ícono de cerrar (X)
+    // Cerrar el menú al dar clic en el ícono de cerrar
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu');
-        navToggle.style.display = 'block'; // Muestra el botón hamburguesa
+        navToggle.style.display = 'block'; 
     });
 
-    // Cerrar el menú al hacer clic en cualquier enlace del menú
+    // Cerrar el menú al interactuar con cualquier enlace del menú
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('show-menu');
-            navToggle.style.display = 'block'; // Muestra el botón hamburguesa
+            navToggle.style.display = 'block'; 
         });
     });
 });
